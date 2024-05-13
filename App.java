@@ -3,7 +3,7 @@ import javax.swing.*;
 public class App {
 
     public static void main(String[] args) throws Exception {
-        int borderwidth = 360;
+        int borderwidth = 700;
         int borderheight = 640;
 
         JFrame frame = new JFrame("Flappy Bird");
@@ -15,8 +15,7 @@ public class App {
         FlappyBird flappyBird = new FlappyBird();
         frame.add(flappyBird);
         frame.pack();
+        flappyBird.requestFocus();
         frame.setVisible(true);
-
-
     }
 }
